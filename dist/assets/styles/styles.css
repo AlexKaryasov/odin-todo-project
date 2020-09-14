@@ -13,6 +13,33 @@ header {
     padding: 10px;
 }
 
+
+/* Split the screen in half */
+
+.split {
+    height: 85%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.split h2 {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.left {
+    left: 0;
+    background-color: #f9f6f3;
+}
+
+.right {
+    right: 0;
+    background-color: rgba(190, 190, 190, 0.2);
+}
+
 footer {
     position: absolute;
     bottom: 0;
