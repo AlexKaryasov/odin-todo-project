@@ -1,16 +1,15 @@
-const projects = []
+let projects = []
 const projectFactory = (name, todos) => {
     return { name, todos }
 }
 
 const addProject = project => {
+    projects = JSON.parse(localStorage.getItem("projects"))
     projects.push(project)
     localStorage.setItem("projects", JSON.stringify(projects))
+    return
 }
 
-const addTodoForProject = (todo, project) => {
-    projects[projects.indexOf(project)].todos.push(todo)
-    localStorage.setItem("projects", JSON.stringify(projects))
-}
+const getTodosForProjectName = projectName => projects[projects.indexOf(projectName)].todos
 
-export default { projectFactory, addProject, addTodoForProject };
+export { projectFactory, addProject, getTodosForProjectName };

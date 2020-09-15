@@ -1,23 +1,24 @@
 {
-  "name": "odin-todo-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexKaryasov/odin-todo-project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexKaryasov/odin-todo-project/issues"
-  },
-  "homepage": "https://github.com/AlexKaryasov/odin-todo-project#readme",
-  "devDependencies": {
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  }
+    "name": "odin-todo-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexKaryasov/odin-todo-project.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlexKaryasov/odin-todo-project/issues"
+    },
+    "homepage": "https://github.com/AlexKaryasov/odin-todo-project#readme",
+    "devDependencies": {
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    }
 }

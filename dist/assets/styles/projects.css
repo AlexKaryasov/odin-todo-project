@@ -1,0 +1,47 @@
+.project-container {
+    display: grid;
+    grid-auto-columns: auto;
+    margin-top: 2vh;
+}
+
+.project-item {
+    border: black 1px solid;
+    min-height: 5vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.add-button {
+    position: absolute;
+    bottom: 0px;
+    min-height: 5vh;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    font-size: 2vh;
+    font-weight: bolder;
+}
+
+.add-project-form-div {
+    position: relative;
+    border: black 1px solid;
+    text-align: center;
+    min-height: 5vh;
+    width: 100%;
+}
+
+.add-project-form-input {
+    float: center;
+    min-height: 3vh;
+}
+
+.add-project-form-submit {
+    position: absolute;
+    right: 0px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 2vh;
+    font-weight: bolder;
+    min-height: 3vh;
+}
