@@ -5,6 +5,8 @@ const projectFactory = (name, todos) => {
 
 const addProject = project => {
     projects = JSON.parse(localStorage.getItem("projects"))
+    if (!projects)
+        projects = []
     projects.push(project)
     localStorage.setItem("projects", JSON.stringify(projects))
     return
