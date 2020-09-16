@@ -1,5 +1,5 @@
-import { todosFactory, addTodoForProject } from './todos.js'
-import { addProject, projectFactory, getTodosForProjectName } from './projects.js'
+import { todosFactory, addTodoForProject, getTodosForProject } from './todos.js'
+import { addProject, projectFactory } from './projects.js'
 
 const projectsContent = document.querySelector('#projects-content')
 const todosContent = document.querySelector('#todos-content')
@@ -20,7 +20,9 @@ const renderProject = (projectContainer, project) => {
     let projectItem = document.createElement('div')
     projectItem.classList.add('project-item')
     projectItem.innerHTML = project.name
-    projectItem.addEventListener('click', (event) => renderTodos(getTodosForProjectName(event.target.value)))
+    projectItem.addEventListener('click', (event) => {
+        renderTodos(getTodosForProject(event.target.innerHTML))
+    })
     projectContainer.appendChild(projectItem)
 }
 

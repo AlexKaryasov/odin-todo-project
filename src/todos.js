@@ -9,4 +9,14 @@ const addTodoForProject = (todo, projectName) => {
     return
 }
 
-export { todosFactory, addTodoForProject };
+const getTodosForProject = projectName => {
+    projects = JSON.parse(localStorage.getItem("projects"))
+    if (!projects)
+        projects = []
+
+    let project = projects.filter(project => project.name === projectName)
+
+    return project.todos
+}
+
+export { todosFactory, addTodoForProject, getTodosForProject };

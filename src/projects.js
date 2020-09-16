@@ -1,3 +1,5 @@
+import { debug } from "webpack"
+
 let projects = []
 const projectFactory = (name, todos) => {
     return { name, todos }
@@ -12,6 +14,4 @@ const addProject = project => {
     return
 }
 
-const getTodosForProjectName = projectName => projects[projects.indexOf(projectName)].todos
-
-export { projectFactory, addProject, getTodosForProjectName };
+export { projectFactory, addProject };
